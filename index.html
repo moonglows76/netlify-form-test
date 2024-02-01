@@ -23,9 +23,10 @@
     <h1 class="text-4xl">お問い合わせ・ご意見・ご要望</h1>
     <p class="my-10 leading-loose">
       インターネット接続やメールのトラブル、ご利用料金に関するお問い合わせなどは<br>
-      <a href="https://www.synapse.jp/faq/" target="_blank" class="text-blue-500 underline underline-offset-4">よくある質問</a>もご覧ください。
+      <a href="https://www.synapse.jp/faq/" target="_blank"
+        class="text-blue-500 underline underline-offset-4">よくある質問</a>もご覧ください。
     </p>
-    <form netlify>
+    <form netlify name="contact" method="POST" action="/thanks.html">
       <label class="form-control w-full mt-7">
         <div class="label">
           <span class="label-text">お名前　<span class="text-red-400 font-bold">【必須】</span></span>
@@ -65,14 +66,16 @@
         <div class="label">
           <span class="label-text">使用OSとそのバージョン</span>
         </div>
-        <input type="text" name="os" placeholder="例）Windows 11、macOS 10.13、iOS 17、Android 14 など" class="input input-bordered w-full" />
+        <input type="text" name="os" placeholder="例）Windows 11、macOS 10.13、iOS 17、Android 14 など"
+          class="input input-bordered w-full" />
       </label>
 
       <label class="form-control w-full mt-7">
         <div class="label">
           <span class="label-text">利用のブラウザとバージョン</span>
         </div>
-        <input type="text" name="browser" placeholder="例）Edge 121、Chrome 121、Safari 16、Firefox 121 など" class="input input-bordered w-full" />
+        <input type="text" name="browser" placeholder="例）Edge 121、Chrome 121、Safari 16、Firefox 121 など"
+          class="input input-bordered w-full" />
       </label>
 
       <label class="form-control w-full mt-7">
@@ -102,13 +105,14 @@
               <li>サービスレベルの維持向上を図るため、アンケート調査、および分析を行うこと。</li>
               <li>利用者に有用かつ有益と思われる当社の商品・サービス等に関する情報、関連するアフターサービスのお知らせを行うこと。</li>
             </ol>
-            <p>弊社の個人情報保護に関する方針は、「<a href="https://www.synapse.jp/notice/private.html" class="!text-blue-500 underline underline-offset-4">個人情報について</a>」をご参照ください。</p>
+            <p>弊社の個人情報保護に関する方針は、「<a href="https://www.synapse.jp/notice/private.html"
+                class="!text-blue-500 underline underline-offset-4">個人情報について</a>」をご参照ください。</p>
           </div>
         </div>
       </div>
 
-    </div>
-  </form>
+    </form>
+  </div>
 </body>
 
 </html>
