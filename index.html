@@ -26,7 +26,19 @@
       <a href="https://www.synapse.jp/faq/" target="_blank"
         class="text-blue-500 underline underline-offset-4">よくある質問</a>もご覧ください。
     </p>
-    <form netlify name="contact" method="POST" action="/thanks.html">
+    <form
+      name="contact"
+      method="POST"
+      action="/thanks.html"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      data-netlify-recaptcha="true"
+    >
+      <p class="hidden">
+        <label>
+          Don’t fill this out if you’re human: <input name="bot-field" />
+        </label>
+      </p>
       <label class="form-control w-full mt-7">
         <div class="label">
           <span class="label-text">お名前　<span class="text-red-400 font-bold">【必須】</span></span>
@@ -85,10 +97,11 @@
         <input type="text" name="internet" placeholder="例）光回線、モバイル、ADSL、ISDN など" class="input input-bordered w-full" />
       </label>
 
-
       <p class="my-10 leading-loose text-center">
         お問い合わせには、24時間以内にご回答いたします。
       </p>
+
+      <div data-netlify-recaptcha="true"></div>
 
       <div class="flex justify-center gap-x-4">
         <button type="reset" class="btn btn-outline btn-primary hover:!text-white w-2/5">書き直す</button>
